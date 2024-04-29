@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace BaseCalendar
 {
-    public partial class UserControlBlank : UserControl
+    public partial class UserControlDays : UserControl
     {
-        public UserControlBlank()
+        public UserControlDays()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void UserControlDays_Load(object sender, EventArgs e)
         {
 
+        }
+        public void days(int numday)
+        {
+            lbdays.Text = numday + "";
         }
     }
 }
