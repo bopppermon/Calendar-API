@@ -1,0 +1,12 @@
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\bin\Debug\BaseCalendar.exe.config
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\bin\Debug\BaseCalendar.exe
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\bin\Debug\BaseCalendar.pdb
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.csproj.AssemblyReference.cache
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.Form1.resources
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.Properties.Resources.resources
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.UserControlBlank.resources
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.csproj.GenerateResource.cache
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.csproj.CoreCompileInputs.cache
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.exe
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.pdb
+C:\Users\julia\source\repos\BaseCalendar\BaseCalendar\obj\Debug\BaseCalendar.UserControlDays.resources

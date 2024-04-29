@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|c:\\users\\julia\\source\\repos\\basecalendar\\basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\usercontrolblank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontrolblank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\usercontrolblank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontrolblank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\usercontrolblank.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontrolblank.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\BaseCalendar\\basecalendar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,6 +51,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Form1.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\Form1.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Form1.cs",
+              "RelativeToolTip": "BaseCalendar\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:45:16.385Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Form1.cs",
               "RelativeDocumentMoniker": "BaseCalendar\\Form1.cs",
@@ -27,6 +73,89 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T01:19:29.265Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Form1.Designer.cs",
+              "RelativeToolTip": "BaseCalendar\\Form1.Designer.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAkwLgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:50:24.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControlDays.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlDays.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlDays.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlDays.cs",
+              "RelativeToolTip": "BaseCalendar\\UserControlDays.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T18:46:33.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControlDays.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlDays.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlDays.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlDays.cs [Design]",
+              "RelativeToolTip": "BaseCalendar\\UserControlDays.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T18:42:32.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserControlBlank.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlBlank.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.cs",
+              "RelativeToolTip": "BaseCalendar\\UserControlBlank.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAjwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:40:32.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserControlBlank.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlBlank.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.cs [Design]",
+              "RelativeToolTip": "BaseCalendar\\UserControlBlank.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:03:23.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserControlBlank.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.Designer.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlBlank.Designer.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\UserControlBlank.Designer.cs",
+              "RelativeToolTip": "BaseCalendar\\UserControlBlank.Designer.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:40:47.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Program.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\Program.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\BaseCalendar\\BaseCalendar\\Program.cs",
+              "RelativeToolTip": "BaseCalendar\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:03:03.868Z"
             }
           ]
         }
