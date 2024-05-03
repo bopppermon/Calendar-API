@@ -14,6 +14,11 @@ namespace BaseCalendar
         [STAThread]
         static void Main()
         {
+            Database db = new Database("./Db.db");
+            db.AddEvent("Park", DateTime.Now);
+            var entries = db.GetData();
+            entries.ForEach((data) => Console.WriteLine($"Event: {data.Item1} Date: {data.Item2}"));
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

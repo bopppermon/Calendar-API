@@ -41,7 +41,7 @@ namespace BaseCalendar
         private void Form1_Load(object sender, EventArgs e)
         {
             //Used this code from the tutorial
-            displayDays();
+            displayDays();            
         }
 
 
@@ -97,7 +97,6 @@ namespace BaseCalendar
         //Function made to display the days of the month
         private void showDisplay()
         {
-
             //Get the first day of the mnth
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
