@@ -14,10 +14,13 @@ namespace BaseCalendar
         [STAThread]
         static void Main()
         {
+            //I'm assuming this was included while testing database.cs
+            /*
             Database db = new Database("./Db.db");
             db.AddEvent("Park", DateTime.Now);
             var entries = db.GetData();
-            entries.ForEach((data) => Console.WriteLine($"Event: {data.Item1} Date: {data.Item2}"));
+            entries.ForEach((data) => Console.WriteLine($"Event: {data.Item1} Date: {data.Item2}")); 
+            */
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

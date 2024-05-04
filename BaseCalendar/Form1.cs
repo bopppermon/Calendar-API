@@ -15,6 +15,11 @@ namespace BaseCalendar
     {
         DateTime now;
         int month, year;
+
+        //Included in Part 2 of video tutorial, used as date variables
+        public static int static_month, static_year;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -55,7 +60,9 @@ namespace BaseCalendar
             month = now.Month;
             year = now.Year;
 
-
+            //Included in Part 2
+            static_month = month;
+            static_year = year;
 
             /* //Get the first day of the mnth
              String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -130,8 +137,6 @@ namespace BaseCalendar
             }
         }
 
-       
-
         private void btnprevious_Click(object sender, EventArgs e)
         {
             
@@ -145,6 +150,9 @@ namespace BaseCalendar
                 month = 12;
                 year--;
             }
+            //Included in Part 2
+            static_month = month;
+            static_year = year;
 
             /*//Get the first day of the mnth
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -195,6 +203,11 @@ namespace BaseCalendar
                 month = 1;
                 year++;
             }
+
+            //Included in Part 2
+            static_month = month;
+            static_year = year;
+
             /*
 
             //Get the first day of the mnth
