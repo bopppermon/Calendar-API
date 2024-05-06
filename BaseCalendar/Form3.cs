@@ -1,19 +1,17 @@
-﻿using BaseCalendar;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-public class Form2 : Form
+public class Form3 : Form
 {
     private Label lblUsername;
     private Label lblPassword;
     private TextBox txtUsername;
     private TextBox txtPassword;
-    private Button btnLogin;
-    private Button btnSignUp;  
-    private Label lblStatus;
+    private Button btnSignUp;
+    private Button btnReturnToSignIn;
 
-    public Form2()
+    public Form3()
     {
         InitializeComponent();
     }
@@ -22,7 +20,7 @@ public class Form2 : Form
     {
         this.Size = new Size(600, 400);
         this.StartPosition = FormStartPosition.CenterScreen;
-        this.Text = "Login Form";
+        this.Text = "Sign Up Form";
 
         lblUsername = new Label
         {
@@ -55,45 +53,46 @@ public class Form2 : Form
             Font = new Font(Font.FontFamily, 12)
         };
 
-        btnLogin = new Button
+        btnSignUp = new Button
         {
-            Text = "Login",
+            Text = "Sign Up",
             Location = new Point(250, 220),
             Size = new Size(100, 40),
             Font = new Font(Font.FontFamily, 12)
         };
-        btnLogin.Click += BtnLogin_Click;
+        btnSignUp.Click += BtnSignUp_Click;
 
-        btnSignUp = new Button
+        btnReturnToSignIn = new Button
         {
-            Text = "Sign Up",
-            Location = new Point(250, 270),  
-            Size = new Size(100, 40),
+            Text = "Return to Sign In",
+            Location = new Point(225, 270),
+            Size = new Size(150, 40),
             Font = new Font(Font.FontFamily, 12)
         };
-        btnSignUp.Click += BtnSignUp_Click;  
+        btnReturnToSignIn.Click += BtnReturnToSignIn_Click;
 
         this.Controls.Add(lblUsername);
         this.Controls.Add(txtUsername);
         this.Controls.Add(lblPassword);
         this.Controls.Add(txtPassword);
-        this.Controls.Add(btnLogin);
-        this.Controls.Add(btnSignUp);  
-    }
-
-    private void BtnLogin_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        Form1 form1 = new Form1();
-        form1.Closed += (s, args) => this.Close();
-        form1.Show();
+        this.Controls.Add(btnSignUp);
+        this.Controls.Add(btnReturnToSignIn);
     }
 
     private void BtnSignUp_Click(object sender, EventArgs e)
     {
+        MessageBox.Show("Sign Up Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         this.Hide();
-        Form3 form3 = new Form3();
-        form3.Closed += (s, args) => this.Close();
-        form3.Show();
+        Form2 form2 = new Form2();
+        form2.Closed += (s, args) => this.Close();
+        form2.Show();
+    }
+
+    private void BtnReturnToSignIn_Click(object sender, EventArgs e)
+    {
+        this.Hide();
+        Form2 form2 = new Form2();
+        form2.Closed += (s, args) => this.Close();
+        form2.Show();
     }
 }
