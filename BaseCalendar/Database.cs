@@ -25,7 +25,7 @@ namespace BaseCalendar
                 SQLiteCommand createTable = new SQLiteCommand(tableCommand, db);
 
                 createTable.ExecuteReader();
-                Console.WriteLine("Create Database Table");
+                //Console.WriteLine("Create Database Table");
             }
         }        
 

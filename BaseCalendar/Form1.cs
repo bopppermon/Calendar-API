@@ -8,17 +8,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using Newtonsoft.Json;
+
 
 namespace BaseCalendar
 {
+    public class Holiday
+    {
+        public string date { get; set; }
+        public string name { get; set; }
+
+        }
     public partial class Form1 : Form
     {
         DateTime now;
         int month, year;
+        
+        //Maintaining a list of years that we fetched the holidays for, so we don't make unnessecary API calls
+        List<int> yearsFetched = new List<int>();
 
         //Included in Part 2 of video tutorial, used as date variables
         public static int static_month, static_year;
 
+        //Conncting to the Database in order to push the holidays to the calendar
+        Database db = new Database("./Db.db");
 
         public Form1()
         {
@@ -64,38 +79,12 @@ namespace BaseCalendar
             static_month = month;
             static_year = year;
 
-            /* //Get the first day of the mnth
-             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-             LBDATE.Text = monthname + " " + year;
-
-             //Get the first day of the month (from tutorial)
-
-             DateTime startofthemonth = new DateTime(year, month,1);
-
-             //Get the count of days of the month
-             int days = DateTime.DaysInMonth(year, month);
-
-             //convert the startofthemonth to integer
-             int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-
-
-
-             //first create a blank usercontrol 
-
-             for(int i = 1; i<dayoftheweek;i++)
-             {
-                 UserControlBlank ucblank = new UserControlBlank();
-                 daycontainer.Controls.Add(ucblank);
-             }
-
-             //Create usercontrol for days
-             for(int i = 1; i <= days; i++)
-             {
-                 UserControlDays ucdays = new UserControlDays();
-                 ucdays.days(i);
-                 daycontainer.Controls.Add(ucdays);
-             } */
-
+            //If we have not fetched the current year's holidays then we fetch it
+            if (!yearsFetched.Contains(static_year))
+            {
+                getHolidays(static_year);
+            }
+            
             showDisplay();
         
         }
@@ -154,39 +143,13 @@ namespace BaseCalendar
             static_month = month;
             static_year = year;
 
-            /*//Get the first day of the mnth
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + " " + year;
 
-            DateTime now = DateTime.Now;
-            Console.WriteLine("Date is" + now);
-            //Get the first day of the month (from tutorial)
-
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            Console.WriteLine("Start of the month is" + startofthemonth);
-            //Get the count of days of the month
-            int days = DateTime.DaysInMonth(year, month);
-            Console.WriteLine("Num of days is " + days);
-            //convert the startofthemonth to integer
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            Console.WriteLine("Day of week is" + dayoftheweek);
-
-
-            //first create a blank usercontrol 
-
-            for (int i = 1; i < dayoftheweek; i++)
+            //If we have not fetched the current year's holidays then we fetch it
+            if (!yearsFetched.Contains(static_year))
             {
-                UserControlBlank ucblank = new UserControlBlank();
-                daycontainer.Controls.Add(ucblank);
+                getHolidays(static_year);
             }
 
-            //Create usercontrol for days
-            for (int i = 1; i <= days; i++)
-            {
-                UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
-                daycontainer.Controls.Add(ucdays);
-            } */
 
             showDisplay();
         }
@@ -208,43 +171,64 @@ namespace BaseCalendar
             static_month = month;
             static_year = year;
 
-            /*
 
-            //Get the first day of the mnth
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + " " + year;
-
-            DateTime now = DateTime.Now;
-            Console.WriteLine("Date is" + now);
-            //Get the first day of the month (from tutorial)
-
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            Console.WriteLine("Start of the month is" + startofthemonth);
-            //Get the count of days of the month
-            int days = DateTime.DaysInMonth(year, month);
-            Console.WriteLine("Num of days is " + days);
-            //convert the startofthemonth to integer
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            Console.WriteLine("Day of week is" + dayoftheweek);
-
-
-            //first create a blank usercontrol 
-
-            for (int i = 1; i < dayoftheweek; i++)
+            //If we have not fetched the current year's holidays then we fetch it
+            if (!yearsFetched.Contains(static_year))
             {
-                UserControlBlank ucblank = new UserControlBlank();
-                daycontainer.Controls.Add(ucblank);
+                getHolidays(static_year);
             }
 
-            //Create usercontrol for days
-            for (int i = 1; i <= days; i++)
-            {
-                UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
-                daycontainer.Controls.Add(ucdays);
-            } */
 
             showDisplay();
+        }
+
+
+        //This method will fetch all the holidays for the current year
+
+        private async void getHolidays(int year)
+        {
+
+
+            //Make the request to the API with the current year that you are in
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                //RequestUri = new Uri("https://public-holiday.p.rapidapi.com/2024/US"),
+                RequestUri = new Uri($"https://public-holiday.p.rapidapi.com/{year}/US"),
+                Headers =
+                {
+                    {"X-RapidAPI-Key", "89678678bfmsh4c17c52f6e82f5dp1f42cejsn4e6d09bb1060" },
+                    {"X-RapidAPI-Host", "public-holiday.p.rapidapi.com" },
+                },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+       
+                var body = await response.Content.ReadAsStringAsync();
+                // Console.WriteLine(body);
+
+                List<Holiday> holidays = JsonConvert.DeserializeObject<List<Holiday>>(body);
+
+               foreach(var holiday in holidays)
+                {
+                    //Convert the date to DateTime
+                    try
+                    {
+                        DateTime holidayDate = DateTime.Parse(holiday.date);
+
+                        db.AddEvent(holiday.name, holidayDate);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.Write("error adding holiday");
+                    }
+
+                }
+
+                yearsFetched.Add(year);
+            }
         }
     }
 }
