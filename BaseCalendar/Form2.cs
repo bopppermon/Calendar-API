@@ -14,7 +14,7 @@ namespace BaseCalendar
         private TextBox txtPassword;
         private Button btnLogin;
         private Label lblStatus;
-        LoginDatabase db = new LoginDatabase("C:/Users/haile/OneDrive/CPP/CS 4080 - Concepts of Prgrming Languages/SQLite/LoginDatabase.db");
+        LoginDatabase db = new LoginDatabase("./Db.db");
 
         public Form2()
         {

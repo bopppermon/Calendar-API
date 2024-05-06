@@ -13,6 +13,28 @@ namespace BaseCalendar
 
         public LoginDatabase(string dataSource) {
             _dataSource = dataSource;
+
+            using (var db = new SQLiteConnection($"Data Source={_dataSource}"))
+            {
+                db.Open();
+
+
+                string tableCommand = "CREATE TABLE IF NOT EXISTS " +
+                    "Users (id INTEGER PRIMARY KEY, username TEXT, password TEXT);";
+
+                SQLiteCommand createTable = new SQLiteCommand(tableCommand, db);
+
+                createTable.ExecuteReader();
+                string insertQuery = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
+
+                using (var insertCommand = new SQLiteCommand(insertQuery, db))
+                {
+                    // Hardcoded username and password
+                    insertCommand.Parameters.AddWithValue("@Username", "admin");
+                    insertCommand.Parameters.AddWithValue("@Password", "password");
+                    insertCommand.ExecuteNonQuery();
+                }
+            }
         }        
 
         public void AddUser(string username, string password)
