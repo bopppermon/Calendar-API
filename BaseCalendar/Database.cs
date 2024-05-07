@@ -70,5 +70,22 @@ namespace BaseCalendar
 
             return entries;
         }
+
+        public void DeleteEvent(string delete)
+        {
+            using (var db = new SQLiteConnection($"Data Source={_dataSource}"))
+            {
+                db.Open();
+
+                SQLiteCommand insertCommand = new SQLiteCommand();
+                insertCommand.Connection = db;
+
+                //insertCommand.CommandText = "INSERT INTO EventTable VALUES(NULL, @Event, @Date);";
+                insertCommand.CommandText = "DELETE FROM EventTable WHERE date = @Date";
+                insertCommand.Parameters.AddWithValue("@Date", delete);
+                insertCommand.ExecuteReader();
+
+            }
+        }
     }
 } 

@@ -46,5 +46,32 @@ namespace BaseCalendar
         {
             dateBox.Text = Form1.static_year + "/" + Form1.static_month + "/" + UserControlDays.static_day;
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            DateTime enteredDate = DateTime.Parse(Form1.static_year + "-" + Form1.static_month + "-" + UserControlDays.static_day);
+            string sqlizedDate = enteredDate.ToString("yyyy-MM-dd HH:mm:ss");
+
+            var entries = db.GetData();
+
+            int index = -1;
+            string deleteDate = "";
+
+            //For each element in the database
+            for (int i = 0; i < entries.Count; i++)
+            {
+                //If element date matches with date on calender, save index so it can be 
+
+                if (entries.ElementAt(i).Item2.Equals(sqlizedDate.ToString()))
+                {
+                    index = i;
+                    deleteDate = sqlizedDate;
+                    db.DeleteEvent(deleteDate);
+                }
+
+            }
+
+            MessageBox.Show("Event Deleted");
+        }
     }
 }

@@ -51,12 +51,15 @@ namespace BaseCalendar
             //Date is parsed and formatted in the way that it is stored in the database
             DateTime enteredDate = DateTime.Parse(Form1.static_year + "-" + Form1.static_month + "-" + lbdays.Text);
             string sqlizedDate = enteredDate.ToString("yyyy-MM-dd HH:mm:ss");
-             
+
+            eventName.Text = "";
+
             //For each element in the database
             for (int i = 0; i < entries.Count; i++)
             {
                 //If element date matches with date on calender, it adds event name to calender
                 //This will include events that are in the database before opening the calender program
+
                 if (entries.ElementAt(i).Item2.Equals(sqlizedDate.ToString()))
                 {
                     eventName.Text = entries.ElementAt(i).Item1.ToString();
