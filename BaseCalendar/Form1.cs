@@ -11,16 +11,19 @@ using System.Windows.Forms;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Runtime.ExceptionServices;
 
 
 namespace BaseCalendar
 {
+    //Making a class Holiday in order to be able to deserialize it later
     public class Holiday
     {
         public string date { get; set; }
         public string name { get; set; }
 
         }
+
     public partial class Form1 : Form
     {
         DateTime now;
@@ -28,6 +31,9 @@ namespace BaseCalendar
         
         //Maintaining a list of years that we fetched the holidays for, so we don't make unnessecary API calls
         List<int> yearsFetched = new List<int>();
+
+
+        
 
         //Included in Part 2 of video tutorial, used as date variables
         public static int static_month, static_year;
@@ -67,7 +73,7 @@ namespace BaseCalendar
 
         //THis method is from following a tutorial
         //https://www.youtube.com/watch?v=tY8_GE6NRYA
-        private void displayDays()
+       private async Task displayDays()
         {
 
             // DateTime now = DateTime.Now;
@@ -79,14 +85,32 @@ namespace BaseCalendar
             static_month = month;
             static_year = year;
 
+            //If we are starting out, populate the calendar with 10 years into the future
+           /* if (yearsFetched.Count == 0)
+            {
+                int temp = static_year + 1;
+                for (int i = 0; i < 10; i++)
+                {
+                    await getHolidays(temp);
+                    temp++;
+                }
+            } */
+
             //If we have not fetched the current year's holidays then we fetch it
             if (!yearsFetched.Contains(static_year))
             {
-                getHolidays(static_year);
-            }
-            
-            showDisplay();
-        
+                //Set the text to LOADING while we get the API data for the current year
+                LBDATE.Text = "LOADING";
+                //Wait to get all the holidays for the current year
+                await getHolidays(static_year);
+                //Show the calendar
+                showDisplay();
+            } else
+            {
+                //Show the calendar
+                showDisplay();
+            } 
+
         }
 
 
@@ -126,7 +150,7 @@ namespace BaseCalendar
             }
         }
 
-        private void btnprevious_Click(object sender, EventArgs e)
+        private async void btnprevious_Click(object sender, EventArgs e)
         {
             
             //clear container
@@ -147,14 +171,21 @@ namespace BaseCalendar
             //If we have not fetched the current year's holidays then we fetch it
             if (!yearsFetched.Contains(static_year))
             {
-                getHolidays(static_year);
+                //Set the header to LOADING while waiting for the API
+                LBDATE.Text = "LOADING";
+                //WAIT for the holidays to fetch
+                await getHolidays(static_year);
+                //Show the calendar for the desired year once the holidays are fetched
+                showDisplay();
+            } else
+            {
+                showDisplay();
             }
 
 
-            showDisplay();
         }
 
-        private void btnnext_Click_1(object sender, EventArgs e)
+        private async void btnnext_Click_1(object sender, EventArgs e)
         {
             //clear container
             daycontainer.Controls.Clear();
@@ -175,60 +206,69 @@ namespace BaseCalendar
             //If we have not fetched the current year's holidays then we fetch it
             if (!yearsFetched.Contains(static_year))
             {
-                getHolidays(static_year);
+                //Set the text to Loading while we wait to get the holidays for the new year
+                LBDATE.Text = "LOADING";
+                //Get the holidays for the year we are going to
+                await getHolidays(static_year);
+                //After that is done, display the holidays for the new year
+                showDisplay();
+            } else
+            {
+                showDisplay();
             }
 
 
-            showDisplay();
         }
 
 
         //This method will fetch all the holidays for the current year
 
-        private async void getHolidays(int year)
+        private async Task getHolidays(int year)
         {
 
-
-            //Make the request to the API with the current year that you are in
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
+            //First we await the holidays to fetch successfully in the calendar
+            await Task.Run(async() =>
             {
-                Method = HttpMethod.Get,
-                //RequestUri = new Uri("https://public-holiday.p.rapidapi.com/2024/US"),
-                RequestUri = new Uri($"https://public-holiday.p.rapidapi.com/{year}/US"),
-                Headers =
+                //Make the request to the API with the current year that you are in
+                var client = new HttpClient();
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Get,
+                    RequestUri = new Uri($"https://public-holiday.p.rapidapi.com/{year}/US"),
+                    Headers =
                 {
                     {"X-RapidAPI-Key", "89678678bfmsh4c17c52f6e82f5dp1f42cejsn4e6d09bb1060" },
                     {"X-RapidAPI-Host", "public-holiday.p.rapidapi.com" },
                 },
-            };
-            using (var response = await client.SendAsync(request))
-            {
-                response.EnsureSuccessStatusCode();
-       
-                var body = await response.Content.ReadAsStringAsync();
-                // Console.WriteLine(body);
-
-                List<Holiday> holidays = JsonConvert.DeserializeObject<List<Holiday>>(body);
-
-               foreach(var holiday in holidays)
+                };
+                using (var response = await client.SendAsync(request))
                 {
-                    //Convert the date to DateTime
-                    try
-                    {
-                        DateTime holidayDate = DateTime.Parse(holiday.date);
+                    response.EnsureSuccessStatusCode();
 
-                        db.AddEvent(holiday.name, holidayDate);
-                    }
-                    catch (Exception e)
+                    var body = await response.Content.ReadAsStringAsync();
+
+                    List<Holiday> holidays = JsonConvert.DeserializeObject<List<Holiday>>(body);
+
+                    foreach (var holiday in holidays)
                     {
-                        Console.Write("error adding holiday");
+                        //Convert the date to DateTime
+                        try
+                        {
+                            DateTime holidayDate = DateTime.Parse(holiday.date);
+
+                            db.AddEvent(holiday.name, holidayDate);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.Write("error adding holiday");
+                        }
+
                     }
 
+                    yearsFetched.Add(year);
                 }
-
-                yearsFetched.Add(year);
-            }
+            });
+            
         }
     }
 }
