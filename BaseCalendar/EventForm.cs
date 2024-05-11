@@ -39,12 +39,29 @@ namespace BaseCalendar
 
             MessageBox.Show("Event Saved");
 
+            Close();
         }
 
         //This sets the date textbox to the specific date chosen
         private void EventForm_Load_1(object sender, EventArgs e)
         {
             dateBox.Text = Form1.static_year + "/" + Form1.static_month + "/" + UserControlDays.static_day;
+
+            DateTime enteredDate = DateTime.Parse(Form1.static_year + "-" + Form1.static_month + "-" + UserControlDays.static_day);
+            string sqlizedDate = enteredDate.ToString("yyyy-MM-dd HH:mm:ss");
+            var entries = db.GetData();
+
+            int index = -1;
+            string deleteDate = "";
+
+            foreach (var entry in entries)
+            {
+                if (entry.Item2.Equals(sqlizedDate.ToString()))
+                {
+                    eventBox.Text = entry.Item1.ToString();
+                    break;
+                }
+            }
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -72,6 +89,7 @@ namespace BaseCalendar
             }
 
             MessageBox.Show("Event Deleted");
+            Close();
         }
     }
 }
