@@ -12,6 +12,7 @@ public class Form2 : Form
     private Button btnLogin;
     private Button btnSignUp;
     private Label lblStatus;
+    LoginSignupDatabase db = new LoginSignupDatabase("./LDb.db");
 
     public Form2()
     {
@@ -83,10 +84,18 @@ public class Form2 : Form
 
     private void BtnLogin_Click(object sender, EventArgs e)
     {
-        this.Hide();
-        Form1 form1 = new Form1();
-        form1.Closed += (s, args) => this.Close();
-        form1.Show();
+        bool isUser = db.VerifyUser(txtUsername.Text, txtPassword.Text);
+        if (isUser)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Closed += (s, args) => this.Close();
+            form1.Show();
+        }
+        else
+        {
+            MessageBox.Show("Invalid username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 
     private void BtnSignUp_Click(object sender, EventArgs e)

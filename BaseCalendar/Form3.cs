@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseCalendar;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -10,6 +11,7 @@ public class Form3 : Form
     private TextBox txtPassword;
     private Button btnSignUp;
     private Button btnReturnToSignIn;
+    LoginSignupDatabase db = new LoginSignupDatabase("./LDb.db");
 
     public Form3()
     {
@@ -81,6 +83,7 @@ public class Form3 : Form
 
     private void BtnSignUp_Click(object sender, EventArgs e)
     {
+        db.AddUser(txtUsername.Text, txtPassword.Text);
         MessageBox.Show("Sign Up Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         this.Hide();
         Form2 form2 = new Form2();
