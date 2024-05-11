@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\julia\\source\\repos\\Calendar-API\\",
+  "WorkspaceRootPath": "C:\\Users\\haile\\source\\repos\\Calendar-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|c:\\users\\julia\\source\\repos\\calendar-api\\basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\usercontroldays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\eventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\eventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\eventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\julia\\source\\repos\\Calendar-API\\basecalendar\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|C:\\Users\\haile\\source\\repos\\Calendar-API\\basecalendar\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7576D-AFB8-4973-B4F1-BFFC1CF2CC3A}|BaseCalendar\\BaseCalendar.csproj|solutionrelative:basecalendar\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\LoginDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCalendar\\LoginDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +46,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.cs",
               "RelativeDocumentMoniker": "BaseCalendar\\Form1.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.cs",
               "RelativeToolTip": "BaseCalendar\\Form1.cs",
               "ViewState": "AQIAAMMAAAAAAAAAAAAAAOAAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:45:16.385Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\LoginDatabase.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\LoginDatabase.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\LoginDatabase.cs",
+              "RelativeToolTip": "BaseCalendar\\LoginDatabase.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAwGQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T01:57:37.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventForm.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
-              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
-              "RelativeToolTip": "BaseCalendar\\EventForm.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAACYAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Program.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\Program.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Program.cs",
+              "RelativeToolTip": "BaseCalendar\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:50:48.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T01:56:11.876Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserControlDays.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\UserControlDays.cs",
-              "RelativeDocumentMoniker": "BaseCalendar\\UserControlDays.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\UserControlDays.cs",
-              "RelativeToolTip": "BaseCalendar\\UserControlDays.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Title": "EventForm.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
+              "RelativeToolTip": "BaseCalendar\\EventForm.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T18:46:33.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T21:50:48.244Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Database.cs",
-              "RelativeDocumentMoniker": "BaseCalendar\\Database.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Database.cs",
-              "RelativeToolTip": "BaseCalendar\\Database.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAswBMAAAAAAAAA",
+              "Title": "UserControlDays.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\UserControlDays.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\UserControlDays.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\UserControlDays.cs",
+              "RelativeToolTip": "BaseCalendar\\UserControlDays.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:45:30.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EventForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
-              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs [Design]",
-              "RelativeToolTip": "BaseCalendar\\EventForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:50:43.866Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-29T18:46:33.398Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EventForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.Designer.cs",
-              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.Designer.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.Designer.cs",
-              "RelativeToolTip": "BaseCalendar\\EventForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Database.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\Database.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Database.cs",
+              "RelativeToolTip": "BaseCalendar\\Database.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:50:23.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T21:45:30.353Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "EventForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.cs",
+              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T21:50:43.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.Designer.cs",
+              "RelativeDocumentMoniker": "BaseCalendar\\EventForm.Designer.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\EventForm.Designer.cs",
+              "RelativeToolTip": "BaseCalendar\\EventForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T21:50:23.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "BaseCalendar\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\haile\\source\\repos\\Calendar-API\\BaseCalendar\\Form1.Designer.cs",
               "RelativeToolTip": "BaseCalendar\\Form1.Designer.cs",
               "ViewState": "AQIAAKsAAAAAAAAAAAAkwLgAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:50:24.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T16:50:24.011Z"
             }
           ]
         }
